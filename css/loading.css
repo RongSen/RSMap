@@ -1,0 +1,5 @@
+/*º”‘ÿloading*/
+.loading-container{position:absolute;top:0px;bottom:0px; left:0px; right:0px;z-index:9;}
+.loading-box{width:86px;height:110px;position:absolute;top:50%;bottom:0px; left:50%; right:0px;margin-top:-55px;margin-left:-43px;}
+.loading-img{width:86px;height:86px;background:transparent url("../images/page_loading.gif") no-repeat center center;}
+.loading-text{width:86px;font-size:14px;text-align:center;margin-top:10px;}

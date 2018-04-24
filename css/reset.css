@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+/*Reset CSS*/
+body,h1,h2,h3,h4,h5,h6,hr,p,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td
+	{
+	margin: 0;
+	padding: 0;
+}
+
+blockquote {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+html {
+	overflow-y: scroll;
+	font-family: SimSun, YouYuan, SimHei, FangSong;
+}
+
+body {
+	min-width: 1000px;
+}
+
+body,button,input,select,textarea {
+	font-size: 12px;
+	font-family: SimSun, FangSong;
+	color: #444444;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: SimSun, YouYuan, SimHei, FangSong;
+}
+
+address,cite,dfn,em,var {
+	font-style: normal;
+}
+
+code,kbd,pre,samp {
+	font-family: SimSun, courier new, courier, monospace;
+}
+
+small {
+	font-size: 16px;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+legend {
+	color: #000;
+}  /* for ie6 */
+img {
+	border: 0;
+}
+
+button,input,select,textarea {
+	font-size: 100%;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0px auto;
+}

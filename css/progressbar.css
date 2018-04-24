@@ -1,0 +1,17 @@
+@charset "utf-8";
+.progress {
+  margin: 0 auto;
+  position: relative;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+  -webkit-border-radius:0; -moz-border-radius:0; border-radius:0;
+}
+.progress-bar{display:inline-block;}
+.progress .sr-only{color:#9a9a9a;}
+
+
+
+
+
+
+

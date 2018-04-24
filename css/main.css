@@ -1,0 +1,198 @@
+/**
+ * Created by 周瓛 on 2016/3/28.
+ * 1.头部-header
+ * 2.侧边-aside
+ */
+/*-----------------------------------------------头部-header----------------------------------------------------------*/
+.header-bg{background-color:#0077cc;width:100%;height:60px;position:absolute;z-index:9;}
+/*-----���˵���-----*/
+.navbar{background-color:transparent;border:none;border-radius:0px;margin:0px;width:100%;height:66px;position:absolute;z-index:9;}
+/*logo*/
+.navbar-header{width:auto;height:60px; margin:0px 25px;}
+.navbar-header a{display:inline-block; width:auto;overflow:hidden;color:#ffffff;font-size: 24px;text-decoration: none;line-height: 60px;white-space: nowrap;}
+.navbar-header img{width:auto;height:100%;float:left;}
+
+/*-----头部导航-----*/
+.header-nav{width:auto;height:auto;}
+.header-nav .nav > li > a {margin:0px;padding:0px;width:80px;height:60px;line-height:60px;color:#fff;text-align:center;font-size:16px;text-shadow:none;}
+.header-nav .nav > li > a[class^="icon-"]{font-size:20px;}
+
+/*激活*/
+.header-nav .nav > li > a:focus
+,.header-nav .nav > li.active > a
+,.header-nav .nav > li.active > a:focus
+{background-color:#ececec;box-shadow:none;line-height:60px;color:#0077cc;}
+/*经过*/
+.header-nav .nav > li > a:hover
+,.header-nav .nav > li.active > a:hover
+{background-color:#ffffff;box-shadow:none;color:#0077cc;}
+
+.header-nav .nav > li > a .icon{font-size:20px;line-height: inherit;}
+
+/*下拉*/
+.header-nav .nav > li.dropdown > a.dropdown-toggle{ width:auto;height: 60px;padding:0px 15px;background: none;line-height: 60px;}
+.header-nav .nav > li.dropdown > a.dropdown-toggle:hover
+,.header-nav .nav > li.dropdown > a.dropdown-toggle:focus
+{line-height:60px;color:#0077cc;background-color:#ffffff;}
+.header-nav .nav > li.active.dropdown > a.dropdown-toggle
+,.header-nav .nav > li.active.dropdown > a.dropdown-toggle:focus
+{line-height:60px;color:#ffffff;background-color:#0077cc;}
+
+/*-----头部右侧 登录信息-----*/
+.headL{width:240px;height:auto; margin:0px;}
+.headL a{display:block;overflow:hidden;margin-top:9px;}
+.header-user{width:160px;float:left;}
+.header-user .userName
+,.header-user .role{width:100px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.header-user .userName{font-size:16px;color:#fff;}
+.header-user .role{font-size:12px;color:#fff;}
+.head{width:44px;margin-right:15px;position:relative;}
+.head>img{width:42px;height:42px;}
+.communicate{float:left;width:auto;margin-left:10px;}
+.communicate a{width:54px;position:relative;}
+.communicate a .icon{font-size: 42px;color:#fff;}
+
+/*-----------------------------------------------侧边-aside-------------------------------------------------------*/
+/*侧边-一级菜单*/
+/*修改.aside-nav 样式，删除overflow-x:hidden;  autor:yfc*/
+.aside-nav{width:220px;height:100%;background-color:#32323a;position:relative; overflow-y:auto;
+	 -moz-transition:width .5s;
+    -ms-transition:width .5s;
+    -o-transition:width .5s;
+    -webkit-transition:left .5s;
+    transition:width .5s;
+}
+.aside-nav a{display:block;width:100%;}
+/*.aside-nav li{position:static;}*/
+
+.aside-nav>ul>li{margin:0;}
+.aside-nav>ul>li>a
+,.aside-nav-second>li>a
+{border-left:2px solid transparent;border-bottom:1px solid #3b3b43;padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.aside-nav>ul>li>a{font-size:18px;height:60px;line-height:60px;position:relative;}
+.aside-nav>ul>li>a
+,.aside-nav>ul>li>a:focus
+{background-color:#1d1d22;color:#fff;}/*展开*/
+.aside-nav>ul>li>a:hover{background-color:#242429;}/*进过*/
+.aside-nav>ul>li>a>.glyphicon
+,.aside-nav>ul>li>a>.icon{margin:0 20px;font-size:20px;}
+.aside-nav>ul>li>a.collapsed{background-color:transparent;color:#95a0aa;}/*默认*/
+
+/*侧边-二级菜单*/
+.aside-nav-second{width:100%;/*height:auto;*/background-color:#28282e;}
+.aside-nav-second>li{margin:0;position: relative;}
+.aside-nav-second>li>a{text-overflow: ellipsis;white-space: nowrap;overflow: hidden;font-size:14px;height:50px;line-height:50px;background-color:transparent;color:#95a0aa;position:relative;}
+.aside-nav-second>li>a>.icon{margin:0 20px;width:18px;height:100%;display:block;float:left;position:relative;}
+.aside-nav-second>li>a>.icon:after{content:'';display:block;position:absolute;top:50%;left:50%;margin-top:-5px;margin-left:-6px;
+    width:11px;height:11px;border-radius:50%;border:1px solid #0077cc;background-color:#28282e;}
+.aside-nav-second>li>a>.icon:before{content:'';display:block;position:absolute;top:0;left:50%;margin-left:-1px;
+    border-left:1px solid #0077cc;width:0;height:100%;}
+/*经过*/
+.aside-nav-second>li>a:hover{background-color:#242429;border-left:2px solid #0077cc;}
+/*选中*/
+.aside-nav-second>li>a:focus
+,.aside-nav-second>li>a.active
+,.aside-nav-second>li>a.active:hover
+,.aside-nav-second>li>a.active:focus
+{background-color:#0077cc;border-left:2px solid transparent;color:#fff;}
+.aside-nav-second>li>a:focus>.icon:after
+,.aside-nav-second>li>a.active>.icon:after
+,.aside-nav-second>li>a.active:hover>.icon:after
+,.aside-nav-second>li>a.active:focus>.icon:after
+{border:1px solid #fff;background-color:#fff;}
+.aside-nav-second>li>a:focus>.icon:before
+,.aside-nav-second>li>a.active>.icon:before
+,.aside-nav-second>li>a.active:hover>.icon:before
+,.aside-nav-second>li>a.active:focus>.icon:before
+{border-left:1px solid #fff;}
+
+/*侧边-三级菜单*/
+.aside-nav-second>li>a.active+.aside-nav-children,
+.aside-nav-second>li:hover .aside-nav-children{display:block;}
+.aside-nav-children{display:none;position:absolute;top:0px;left:100%;
+    background:#eee;width:200px;/*height:100%;padding:15px 0;*/list-style:none; margin:0;}
+.aside-nav-children li{width:100%;height:50px;line-height:50px;}
+.aside-nav-children li a{padding:0px 20px;color:#333;font-size:14px;text-decoration:none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.aside-nav-children li a:hover{background:#e8e8e8;color:#0077cc;}
+/* 新增左侧菜单栏优化样式 */
+.aside-nav .panel>a>.icon {
+	width:29px;
+	margin: 0 10px 0 20px;
+	text-align: center;
+	line-height:60px;
+}
+.aside-nav .panel>a>.title{
+	display:block;
+	position:absolute;top:0;left:64px;
+	width:150px;
+
+	
+}
+
+/*----------------登录页----------------*/
+.login-box{width:500px;position:absolute; left:50%; margin-left:-290px;top:20%;border-radius:10px;
+    background-color: #fafafa;padding:40px;
+    box-shadow:0px 0px 30px rgba(0,0,0,0.2);
+    -ms-box-shadow:0px 0px 30px rgba(0,0,0,0.2);
+    -webkit-box-shadow:0px 0px 30px rgba(0,0,0,0.2);
+    -moz-box-shadow:0px 0px 30px rgba(0,0,0,0.2);
+    -o-box-shadow:0px 0px 30px rgba(0,0,0,0.2);}
+.login-box .login-logo{text-align:center;}
+.login-box .login-logo img{margin-bottom:30px;}
+.login-box .login{width: 300px;margin: 0px auto;}
+.login .control-group{position:relative;}
+.login .control-group>span{position: absolute;top: 0px;right: 0px;padding: 6px 10px;font-size: 16px;color:#ccc}
+.control-group a{font-size:14px;}
+
+.login .control-group .form-control {display: block;width: 100%;height: auto;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */}
+
+/*----------------动态登录框----------------*/
+.dynamic-login-box{width:500px;position:absolute; left:50%; margin-left:-250px;border-radius:10px;
+    background-color: #fafafa;}
+.dynamic-login-box .login-logo{text-align:center;}
+.dynamic-login-box .login{width: 300px;margin: 0px auto;}
+
+/*-----------------------error-----------------------------*/
+@font-face {
+    font-family: 'Impact';
+    /*src: url('../font/impact.ttf') format('truetype');存在此行导致后台出错- by Jam 2016-07-22 -*/
+    /*src: url('../font/impact.eot'); /!* IE9*!/
+    src: url('../font/impact.eot?#iefix') format('embedded-opentype') /!* IE6-IE8 *!/
+    ,url('../font/impact.woff') format('woff') /!* chrome, firefox *!/
+    ,url('../font/impact.ttf') format('truetype') /!* chrome, firefox, opera, Safari, Android, iOS 4.2+*!/
+    ,url('../font/impact.svg#iconfont') format('svg'); /!* iOS 4.1- *!/*/
+}
+
+.error-container{position:absolute;width:100%;top:50%;margin-top:-250px;}
+.error-wrapper{position:relative;margin:0px auto;width:992px;height:456px;background:transparent url("../images/error_bg.png") no-repeat;text-align:center;}
+.error-type-icon{position:absolute;bottom:-1%;right:7%;width:250px;height:230px;background:transparent url("../images/error_404.png") no-repeat;background-size:100% auto;}
+.error-403{background-image:url("../images/error_403.png");}
+.error-404{background-image:url("../images/error_404.png");}
+.error-500{background-image:url("../images/error_500.png");}
+.error-600{background-image:url("../images/error_600.png");}
+
+.error-box{width:520px;height:auto; margin:0px auto; text-align:center;}
+.error-type{padding-top:32px;width:100%;color:#0077cc;line-height: 1.2;font-size:190px; font-family: 'Impact';}
+.error-info{font-size:20px; margin:20px 0 30px 0;}
+
+/*------------------------------------------------------响应式----------------------------------------------------------*/
+@media screen and (max-width: 1366px) {
+	.aside-nav {width:100%;}
+	.aside-nav .panel>a>.title{display: none;}
+	.aside-nav:hover {width:220px;}
+	.aside-nav:hover .panel>a>.title{display: block;} 
+}
+
+
+

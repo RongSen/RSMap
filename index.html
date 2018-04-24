@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RSMapDemo</title>                                         
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+	<link rel="stylesheet" href="css/tiandi-map/ol.css" />
+	<link rel="stylesheet" type="text/css" href="RSMap/css/RSMap-ui.css" />
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+
+	<script type="text/javascript" src="js/tiandi-map/ol.js"></script>
+	<script type="text/javascript" src="js/tiandi-map/maps.js"></script>
+	<script type="text/javascript" src="js/tiandi-map/service.js"></script>
+
+	<script src="RSMap/js/RSMap-utils.js"></script>
+	<script src="RSMap/js/RSMap.js"></script>
+	<script src="RSMap/js/RSMap-source.js"></script>
+	<script src="RSMap/js/console.js"></script>
+
+	<script src="bootstrap/js/bootstrap.js"></script><!-- bootstrap v2.3.2 -->
+	<script src="bootstrap/js/holder.min.js"></script><!-- bootstrap v2.3.2的图片占位组件 -->
+	<script src="js/jquery-ui.js"></script><!-- jQuery UI v1.11.4 -->
+	<script src="js/json2.js"></script><!-- JSON解析包 -->
+	<script src="js/jquery.jsonp-2.4.0.min.js"></script><!-- JSONP插件 -->
+	<script src="js/fjzx-jquery-ext.js"></script><!-- fjzx扩展通用jQuery方法 -->
+	<script src="js/fjzx-jquery-ui.js"></script><!-- fjzx组件包 -->
+  </head>
+  <body style="height:100%;">
+	<div class="wrapper p20" style="height: 100%;box-sizing: border-box;">
+		<div class="map-container">
+			<div id="allmap" class="map-wrapper"></div>
+		</div>
+	</div>
+	<script src="RSMap/js/console.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		var longitude = "";
+ 		var latitude = "";
+ 		initMap({
+ 			target: "allmap",
+ 			center: [longitude,latitude],
+ 			layers: [fjzx.map.source.getGlobalVecLayerGroup()]
+ 		});
+	});
+		/* var options = {};
+
+		var currentLayerGroup = fjzx.map.source.getGlobalVecLayerGroup();
+		map = new fjzx.map.Map({
+			center: options.center ? options.center : [117.01, 25.12],
+	        zoom: 13,
+			layers: options.layers ? options.layers : [currentLayerGroup],
+			target: options.target ? options.target : 'allmap'
+		});
+		//map.enableScrollWheelZoom(); //启用滚轮放大缩小
+		defaultLongitude = options.center ? options.center[0] : 117.01;
+		defaultLatitude = options.center ? options.center[0] : 25.12;
+		map.setCenterAndZoom(new fjzx.map.Point(defaultLongitude,defaultLatitude), 13); // 初始化地图,设置中心点坐标和地图级别。
+		map.addEventListener("click",mapClickEvent);
+
+	    //地图缩放控件
+	  	var zoomSlider = new ol.control.ZoomSlider();
+	  	map.addControl(zoomSlider); */
+	</script>
+  </body>
+</html>

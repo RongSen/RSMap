@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+/*状态*/
+.device-state{position:relative; padding-left:28px;color:#2b2b2b;font-size:16px;text-align:left;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.device-state:before{content:"";
+	position:absolute;top:50%;left:0px;margin-top:-9px;
+	width:16px;height:18px;overflow:hidden;
+	background:transparent url("../images/icon_distributor_state.png");
+}
+.device-state.warning:before{ background-position:-16px 0;}
+.device-state.normal:before{ background-position:0px 0;}
+/*开关状态*/
+.device-switch-state{position:relative; padding-left:24px;font-size:14px;text-align:left;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.device-switch-state:before{content:"";
+	position:absolute;top:50%;left:0px;margin-top:-7px;
+	width:25px;height:14px;overflow:hidden;
+	background:transparent url("../images/equipment status_onoff.png");
+}
+.device-switch-state.off:before{ background-position:-25px 0;}
+.device-switch-state.on:before{ background-position:0px 0;}
+/*网络状态*/
+.network-switch-state{position:relative;}
+.network-switch-state:before{content:"";width:34px;height:34px;overflow:hidden;
+	position:absolute;background:transparent url("../images/rightandwrong.png");
+}
+.network-switch-state.on:before{ background-position:-34px 0;}
+.network-switch-state.off:before{ background-position:0px 0;}
+
+
+/*电子数字*/
+.e_number-container{font-size:0px;text-align:center;border:6px solid #0077cc;padding:12px 0px;
+	-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;
+}
+.e_number-container [class^="num-"]{width:23px;height:36px;background:transparent url("../images/number.png");display:inline-block;}
+.e_number-container .num-box{background-position:0px 0px;}
+.e_number-container .num-dot{background-position:-23px 0px;}
+.e_number-container .num-0{background-position:0px -36px;}
+.e_number-container .num-1{background-position:-23px -36px;}
+.e_number-container .num-2{background-position:-46px -36px;}
+.e_number-container .num-3{background-position:-69px -36px;}
+.e_number-container .num-4{background-position:-92px -36px;}
+.e_number-container .num-5{background-position:-115px -36px;}
+.e_number-container .num-6{background-position:-138px -36px;}
+.e_number-container .num-7{background-position:-161px -36px;}
+.e_number-container .num-8{background-position:-184px -36px;}
+.e_number-container .num-9{background-position:-207px -36px;}
+
+/* 配电柜-表盘-图标*/
+.coulometer-icon{text-align:center;font-size:14px;}
+.coulometer-icon:before{display:block;background:transparent url("../images/icon_distributor.png");
+	width:34px;height:34px;content:"";overflow:hidden;margin:10px auto 0px auto;
+}
+.coulometer-icon.curt:before{background-position:0px 0px;}
+.coulometer-icon.volt:before{background-position:-34px 0px;}
+.coulometer-icon.pw:before{background-position:-68px 0px;}
+
+/* distributor */
+.coulometer-container{overflow:hidden;margin-bottom:41px;}
+.coulometer-container .column{float:left;
+	width:210px;min-height:48px;
+}
+.coulometer-container .item{width:188px;height:88px;margin:0px auto;overflow:hidden;}
+
+.coulometer-container .title{height:48px; font-size:24px;color:#0077cc;text-align:center;}
+.coulometer-container .icon-img{width:48px;color:#0077cc;text-align:center;}
+.coulometer-container .icon-img .item{width:100%;position:relative;}
+
+.distributor .form-horizontal{margin-bottom:0px;}
+.distributor .form-horizontal .control-group{margin:17px 0;position:relative;min-height:34px;}
+.distributor .form-horizontal .control-label {width:54px;text-align:left;font-size:18px;float:none;}
+.distributor .form-horizontal .controls{margin-left: 50px;position: absolute;top: 50%;margin-top: -17px;}
+.distributor .form-control{width:68px;text-align:right;}
+.distributor .btn-link{text-decoration: underline;font-size: 18px;}
+
+
+/*环境面板*/
+.environment-panel{width:154px;text-align:center;}
+.environment-panel-content{
+	width:100%;height:98px;overflow:hidden;
+	background:transparent url("../images/air_bg.png") no-repeat;
+	color:#ffffff;
+}
+.environment-panel-title{color:#0077cc;font-size:14px;line-height:1.8;}
+.environment-panel .temp{margin-top:7px; line-height:32px; font-size:18px;}
+.environment-panel .hmdt{margin-top:1px;line-height:38px; font-size:24px;}
+.environment-panel .hmdt .unit{display:inline-block;width:12px;line-height:1; text-align:center; text-transform:uppercase;font-size:12px;}
+.environment-panel .hmdt .unit .rh{font-size:9px;display:inline-block;}
+/* summary 组*/
+.summary-container{position:relative;}
+.summary-top{position:absolute;top:0px;left:0px;right:0px;z-index:2;
+	background-color:#0077cc;
+	color:#ffffff;line-height: 1.5;font-size:16px;cursor:default;
+}
+.summary-top .title,
+.summary-top .address,
+.summary-top .r,
+.summary-top .more{padding:12px 0px;}
+.summary-top .title{margin:0px 12px;}
+.summary-top .address{}
+.summary-top .more{text-align:center;min-width:48px;cursor:pointer;}
+.summary-top .r.icon:hover,
+.summary-top .more:hover
+{background-color:#006bb8;}
+.summary-top .r.icon{display:inline-block; text-align:center;min-width:28px;cursor:pointer;line-height:inherit;}
+
+.summary-content{padding-top:64px;position:relative;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.summary-content.summary-box{padding-top:64px;}
+.summary-box{border:2px solid #cdcdcd;
+	-webkit-border-radius:8px; -moz-border-radius:8px; border-radius:8px;
+	padding:16px;
+}
+.summary-container .group-container{}
+.summary-container .group-top{overflow:hidden;color:#0077cc;font-size:16px;}
+.summary-container .group-content{}
+
+
+/**/
+.distributor{}
+.distributor .state{margin-top:10px; font-size:16px;overflow:hidden;line-height:2.3;}
+.distributor .state .device-state{width:25%;float:left;}
+
+/**/
+.airConditioner{width:240px;margin:0px auto;color:#0077cc;text-align:center;}
+.airConditioner .temperature{font-size:40px;line-height:1;margin-top:20px;}
+.airConditioner .mode{font-size:20px;border-bottom:1px solid #0077cc;padding:10px 0;}
+.airConditioner .state{margin-top:10px; font-size:16px;overflow:hidden;line-height:2.3;}
+.airConditioner .state .device-state{width:50%;float:left;text-align:center;}
+.airConditioner .state .device-state:before{left: 16px;}
+
+/**/
+.environment{overflow:hidden;}
+.environment .environment-panel{float:left;margin-left:12px;}
+
+/*开关量*/
+.switchingValue-list{margin:0;padding:0;list-style:none;overflow:hidden;}
+.switchingValue-list-li{position:relative;padding-left: 44px;margin:16px 0px; float:left; width:164px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.switchingValue-list-li:before{content:"";
+	position:absolute;top:50%;left:0px;margin-top:-20px;
+	width:40px;height:40px;overflow:hidden;
+	background:transparent url("../images/icon_switching_value.png");
+}
+.switchingValue-list-li.green:before{ background-position:0px 0;}
+.switchingValue-list-li.orange:before{ background-position:-40px 0;}
+.switchingValue-list-li.red:before{ background-position:-80px 0;}
+.switchingValue-list-li .form-control{width:80px;margin:0px;}
+.switchingValue-state{display:inline-block;margin-right:10px;color:#50606a;font-size:14px;cursor:pointer;}
+.switchingValue-state.active{color:#0077cc;}
+
+/*网络设备状态*/
+.network-state{width:500px;margin:0px auto 34px auto;}
+.network-state .summary-top{font-size:14px;}
+.network-state .summary-top .title,
+.network-state .summary-top .address,
+.network-state .summary-top .r,
+.network-state .summary-top .more{padding:3px 0px;}
+.network-state .summary-content.summary-box{padding-top:44px;}
+.network-state .summary-box{border-width:1px;}
+.network-state .left{float:left;width:228px;text-align:right;}
+.network-state .right{overflow:hidden;font-size:14px;line-height:2;margin-top: 20px;display:block;text-align:left;}
+.network-state .device-state,
+.network-state .device-switch-state
+{display:inline-block;padding-left: 24px; font-size:inherit;}
+.network-state .btn-link{text-decoration: underline;}
+.network-state .network-switch-state{position:absolute;left:16px;top:48px;}
+

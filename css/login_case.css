@@ -1,0 +1,323 @@
+/*--------------------------------------
+	登录页
+---------------------------------------*/
+body{background:transparent;overflow:auto;}
+.mainbox{width:1200px;margin:0 auto;}
+/*登录页-logo*/
+.login-logo{padding:40px 0 30px 0;}
+.logo-img{width:auto;}
+/*登录页-底部*/
+.login-bottom{/*position:absolute;bottom:0px;*/width:100%; height: auto;padding:50px 0px 60px 0px;
+    background:transparent url("../images/bg_ffffff_25.png") repeat;
+    color:#000;text-align:center;}
+.login-bottom a{color:inherit;font-weight:bold;}
+/*登录页-content*/
+.content-container{position:relative;background:#0040a3 url("../images/login_bg.jpg") no-repeat center center;width:100%;height:580px;overflow:hidden;}
+.content{position:absolute;top:0px;left:50%;margin-left:-860px;
+	width:1283px;height:580px;}
+.login-badge-bg-container{position:absolute;width:1283px;height:580px;text-align:center;}
+.login-grid-container{position:absolute;overflow:hidden;width:1283px;height:580px;text-align:center;}
+
+.login-technology-ring1-container{position:absolute;top:50%;left:50%;margin-left:-263px;margin-top:-128px;
+	width:526px;height:526px;}
+.login-technology-ring2-container{position:absolute;top:50%;left:50%;margin-left:-362px;margin-top:-400px;	
+	width:724px;height:724px;}
+.login-technology-wrapper{width:100%; height:100%;
+	-webkit-transform: rotateX(70deg);	/* Safari 和 Chrome */
+	-moz-transform: rotateX(70deg);	/* Firefox */
+	transform: rotateX(70deg);}
+.login-technology-wrapper img
+{position:absolute;}
+.ani-login-technology-ring1-img2{
+	-ms-animation: anticlockwiseRotate 15s linear infinite; /* IE */
+    -moz-animation: anticlockwiseRotate 15s linear infinite; /* Firefox */
+    -webkit-animation: anticlockwiseRotate 15s linear infinite; /* Safari and Chrome */
+    -o-animation: anticlockwiseRotate 15s linear infinite; /* Opera */
+    animation: anticlockwiseRotate 15s linear infinite;
+}
+.ani-login-technology-ring1-img3{
+	-ms-animation: clockwiseRotate 10s linear infinite; /* IE */
+    -moz-animation: clockwiseRotate 10s linear infinite; /* Firefox */
+    -webkit-animation: clockwiseRotate 10s linear infinite; /* Safari and Chrome */
+    -o-animation: clockwiseRotate 10s linear infinite; /* Opera */
+    animation: clockwiseRotate 10s linear infinite;
+}
+.ani-login-technology-ring1-img4{
+	-ms-animation: anticlockwiseRotate 5s linear infinite; /* IE */
+    -moz-animation: anticlockwiseRotate 5s linear infinite; /* Firefox */
+    -webkit-animation: anticlockwiseRotate 5s linear infinite; /* Safari and Chrome */
+    -o-animation: anticlockwiseRotate 5s linear infinite; /* Opera */
+    animation: anticlockwiseRotate 5s linear infinite;
+}
+.login-badge-container{position:absolute;top:50%;left:50%;margin-left:-123px;margin-top:-160px;}
+.login-main-container{position:absolute;width:1283px;height:580px;top:-66px;}
+.ani-login-rfid-container{position:absolute;top:260px;left:670px;}
+.ani-login-gps-container{position:absolute;top:255px;left:290px;}
+.ani-login-warning-container{position:absolute;top:180px;left:860px;}
+.ani-login-barcode-container{position:absolute;top:150px;left:230px;}
+.ani-login-offline-warehouse-container{position:absolute;top:58px;left:640px;}
+.ani-login-message-container{position:absolute;top:60px;left:360px;}
+.ani-login-rfid-container:hover *
+,.ani-login-gps-container:hover *
+,.ani-login-warning-container:hover *
+,.ani-login-barcode-container:hover *
+,.ani-login-offline-warehouse-container:hover *
+,.ani-login-message-container:hover *
+{
+	-webkit-animation-play-state:paused; /* Safari 和 Chrome */
+	animation-play-state:paused;
+}
+
+/*登录页-主*/
+.login-box{position:absolute;left:50%;top:100px;margin:0;padding:0;margin-left:222px;
+	width:auto;height:auto;background:none;box-shadow:none;border-radius:0;}
+.login-container{float:right;padding:14px;
+	background-color:#fff;;}	
+.login-wrapper{padding:30px;padding-top:0; background-color:#fff;}
+.login-title{font-size:30px;color:#0059b3;padding-top: 26px;padding-bottom: 16px;}	
+.login-box .login{width: 300px;margin: 0 auto;}
+.login .control-group{position:relative;}
+.login .control-group .form-control{padding:8px 12px;border-radius:0;}
+.login .control-group>span{position: absolute;top:50%;right:10px;padding:0px;
+	line-height:1px;font-size: 16px;color:#ccc}
+.control-group a{font-size:14px;}
+.head-container{position: relative;margin: 0 auto;
+	width:100px;height:100px;}
+.head-img{position: absolute;top: -50%;/*background-color:#fffeb4;*/
+	width:100%;height:100%;border-radius:50%;}
+.btn-login{padding:8px 12px;color:#fff;font-size:16px;line-height:1;
+	background:#18a318;
+	box-shadow:none;border:1px solid #18a318;border-radius:0;}
+.btn-login:hover
+,.btn-login:focus
+,.btn-login:active
+,.btn-login.active
+,.btn-login.disabled
+,.btn-login[disabled]
+{background:#158f15;color:#fff;}
+.btn-login:active,.btn-login.active{background:#127a12;color:#fff;}
+
+/*------------------------------------------------------动画-------------------------------------------------------------*/
+/*--- 先小后大-ani-login-scale1---*/
+@-moz-keyframes loginScale1 /* Firefox */
+{
+    0%,100%{
+        -moz-transform:scale(1,1);
+    }
+    50%{
+        -moz-transform: scale(0.9,0.9);
+    }
+}
+@-webkit-keyframes loginScale1 /* Safari and Chrome */
+{
+    0%,100% {
+        -webkit-transform:scale(1,1);
+    }
+    50% {
+        -webkit-transform: scale(0.9,0.9);
+    }
+}
+
+@-o-keyframes loginScale1 /* Opera */
+{
+    0%,100%{
+        -o-transform:scale(1,1);
+    }
+    50% {
+        -o-transform: scale(0.9,0.9);
+    }
+}
+
+@keyframes loginScale1 {
+    0%,100% {
+        -ms-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    50% {
+        -ms-transform:scale(0.9,0.9);
+        transform: scale(0.9,0.9);
+    }
+}
+.ani-login-scale1{
+	-ms-animation: loginScale1 6s linear infinite; /* IE */
+    -moz-animation: loginScale1 6s linear infinite; /* Firefox */
+    -webkit-animation: loginScale1 6s linear infinite; /* Safari and Chrome */
+    -o-animation: logincale1 6s linear infinite; /* Opera */
+    animation: loginScale1 6s linear infinite;
+}
+.ani-login-scale2{
+	-ms-animation: loginScale1 6s linear -3s infinite; /* IE */
+    -moz-animation: loginScale1 6s linear -3s infinite; /* Firefox */
+    -webkit-animation: loginScale1 6s linear -3s infinite; /* Safari and Chrome */
+    -o-animation: logincale1 6s linear -3s infinite; /* Opera */
+    animation: loginScale1 6s linear -3s infinite;
+}
+/*--- y轴先下后上-ani-login-y1---*/
+@-moz-keyframes loginY1 /* Firefox */
+{
+    0%,100%{
+        -moz-transform:translateY(0);
+    }
+    25%{
+        -moz-transform: translateY(1%);
+    }
+    75%{
+        -moz-transform: translateY(-1%);
+    }
+}
+@-webkit-keyframes loginY1 /* Safari and Chrome */
+{
+    0%,100%{
+        -webkit-transform:translateY(0);
+    }
+    25%{
+        -webkit-transform: translateY(1%);
+    }
+    75%{
+        -webkit-transform: translateY(-1%);
+    }
+}
+
+@-o-keyframes loginY1 /* Opera */
+{
+    0%,100%{
+        -o-transform:translateY(0);
+    }
+    25%{
+        -o-transform: translateY(1%);
+    }
+    75%{
+        -o-transform: translateY(-1%);
+    }
+}
+
+@keyframes loginY1 {
+	0%,100%{
+        -ms-transform:translateY(0);
+        transform:translateY(0);
+    }
+    25%{
+        -ms-transform: translateY(1%);
+        transform: translateY(1%);
+    }
+    75%{
+        -ms-transform: translateY(-1%);
+       transform: translateY(-1%);
+    }
+}
+.ani-login-y1{
+	-ms-animation: loginY1 6s linear infinite; /* IE */
+    -moz-animation: loginY1 6s linear infinite; /* Firefox */
+    -webkit-animation: loginY1 6s linear infinite; /* Safari and Chrome */
+    -o-animation: loginY1 6s linear infinite; /* Opera */
+    animation: loginY1 6s linear infinite;
+}
+.ani-login-y2{
+	-ms-animation: loginY1 6s linear -3s infinite; /* IE */
+    -moz-animation: loginY1 6s linear -3s infinite; /* Firefox */
+    -webkit-animation: loginY1 6s linear -3s infinite; /* Safari and Chrome */
+    -o-animation: loginY1 6s linear -3s infinite; /* Opera */
+    animation: loginY1 6s linear -3s infinite;
+}
+/*--- x轴先右后左-ani-login-x1---*/
+@-moz-keyframes loginX1 /* Firefox */
+{
+    0%,100%{
+        -moz-transform:translateX(0);
+    }
+    25%{
+        -moz-transform: translateX(0.5%);
+    }
+    75%{
+        -moz-transform: translateX(-0.5%);
+    }
+}
+@-webkit-keyframes loginX1 /* Safari and Chrome */
+{
+    0%,100%{
+        -webkit-transform:translateX(0);
+    }
+    25%{
+        -webkit-transform: translateX(0.5%);
+    }
+    75%{
+        -webkit-transform: translateX(-0.5%);
+    }
+}
+
+@-o-keyframes loginX1 /* Opera */
+{
+    0%,100%{
+        -o-transform:translateX(0);
+    }
+    25%{
+        -o-transform: translateX(0.5%);
+    }
+    75%{
+        -o-transform: translateX(-0.5%);
+    }
+}
+
+@keyframes loginX1 {
+	0%,100%{
+        -ms-transform:translateX(0);
+        transform:translateX(0);
+    }
+    25%{
+        -ms-transform: translateX(0.5%);
+        transform: translateX(0.5%);
+    }
+    75%{
+        -ms-transform: translateX(-0.5%);
+       transform: translateX(-0.5%);
+    }
+}
+.ani-login-x1{
+	-ms-animation: loginX1 6s linear infinite; /* IE */
+    -moz-animation: loginX1 6s linear infinite; /* Firefox */
+    -webkit-animation: loginX1 6s linear infinite; /* Safari and Chrome */
+    -o-animation: loginX1 6s linear infinite; /* Opera */
+    animation: loginX1 6s linear infinite;
+}
+.ani-login-x2{
+	-ms-animation: loginX1 6s linear -3s infinite; /* IE */
+    -moz-animation: loginX1 6s linear -3s infinite; /* Firefox */
+    -webkit-animation: loginX1 6s linear -3s infinite; /* Safari and Chrome */
+    -o-animation: loginX1 6s linear -3s infinite; /* Opera */
+    animation: loginX1 6s linear -3s infinite;
+}
+
+/*------------------------------------------------------响应式----------------------------------------------------------*/
+
+@media screen and (max-width:1280px){
+	.login-box{top:44px;margin-left:122px;}
+	.login-container{padding:0px;}
+	.login{width:250px;}
+	.mainbox{width:840px;}
+	.content-container{height:430px;}
+	.content{width:900px;height:406px;margin-left:-670px;}
+	.login-badge-bg-container{width:900px;height:406px;}
+	.login-badge-bg-container img{height:406px;}
+	.login-grid-container{width:900px;height:406px}
+	.login-grid-container img{height:406px;}
+	.login-technology-ring1-container{width:368px;height:368px;margin-left:-184px;margin-top:-90px;}
+	.login-technology-ring2-container{width:506px;height:506px;margin-left:-253px;margin-top:-280px;}
+	.login-main-container{width:900px;height:406px;}
+	.ani-login-rfid-container{top:170px;left:430px;}
+	.ani-login-gps-container{top:178px;left:203px;}
+	.ani-login-warning-container{top:126px;left:602px;}
+	.ani-login-barcode-container{top:105px;left:140px;}
+	.ani-login-offline-warehouse-container{top:20px;left:420px;}
+	.ani-login-message-container{top:10px;left:220px;}
+	.login-badge-container{margin-top:-116px;margin-left:-86px;}
+	.login-badge-container img{width:76%;}
+
+}
+/*---------------------------------lg---------------------------------------*/
+@media screen (min-width:1279px) and (max-width:1440px){
+	.login-logo{padding:16px;}
+	.login-logo img{height:70px;} 
+	.login-bottom{padding:30px;position:absolute;bottom:0px;}
+}
+
+

@@ -1,0 +1,453 @@
+/*
+ * 自用CSS3动画库
+ */
+/*animation: name duration timing-function delay iteration-count direction;*/
+
+/*----------------------------------------------base-----------------------------------------------------------*/
+/* 默认播放设置 */
+.ani{
+    -webkit-animation-duration: 1s;/* Safari and Chrome */
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;/* Safari and Chrome */
+    animation-fill-mode: both
+}
+/* 无限循环播放 */
+.ani.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+
+/*--- 闪烁-flash ---*/
+@-webkit-keyframes flash { /* Safari and Chrome */
+    0%, 100%, 50% {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
+@keyframes flash {
+    0%, 100%, 50% {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
+
+.ani-flash {
+    -webkit-animation-name: flash;
+    animation-name: flash
+}
+
+/*--- 顺时针旋转-clockwise-rotate---*/
+@-moz-keyframes clockwiseRotate /* Firefox */
+{
+    from{
+        -moz-transform:rotate(0deg);
+    }
+    to{-moz-transform:rotate(360deg);
+    }
+}
+@-webkit-keyframes clockwiseRotate /* Safari and Chrome */
+{
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes clockwiseRotate /* Opera */
+{
+    from {
+        -o-transform: rotate(0deg);
+    }
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@keyframes clockwiseRotate {
+    from {
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.ani-clockwiseRotate{
+    -ms-animation-name: clockwiseRotate; /* IE */
+    -moz-animation-name: clockwiseRotate; /* Firefox */
+    -webkit-animation-name: clockwiseRotate; /* Safari and Chrome */
+    -o-animation-name: clockwiseRotate; /* Opera */
+    animation-name: clockwiseRotate;
+}
+/*--- 逆时针旋转-anticlockwiseRotate-rotate---*/
+@-moz-keyframes anticlockwiseRotate /* Firefox */
+{
+    from{
+        -moz-transform:rotate(0deg);
+    }
+    to{-moz-transform:rotate(-360deg);
+    }
+}
+@-webkit-keyframes anticlockwiseRotate /* Safari and Chrome */
+{
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@-o-keyframes anticlockwiseRotate /* Opera */
+{
+    from {
+        -o-transform: rotate(0deg);
+    }
+    to {
+        -o-transform: rotate(-360deg);
+    }
+}
+
+@keyframes anticlockwiseRotate {
+    from {
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+.ani-anticlockwiseRotate{
+    -ms-animation-name: anticlockwiseRotate; /* IE */
+    -moz-animation-name: anticlockwiseRotate; /* Firefox */
+    -webkit-animation-name: anticlockwiseRotate; /* Safari and Chrome */
+    -o-animation-name: anticlockwiseRotate; /* Opera */
+    animation-name: anticlockwiseRotate;
+}
+
+/*----------------------------------------------- 滑动-Sliders ------------------------------------------------------*/
+/*---从左淡入---*/
+@-moz-keyframes slideInLeft /* Firefox */
+{
+    from{
+        -moz-transform:translate(-100%,0px);
+        opacity:0;
+    }
+    to{-moz-transform:translate(0px,0px);
+        opacity:1;
+    }
+}
+@-webkit-keyframes slideInLeft /* Safari and Chrome */
+{
+    from {
+        -webkit-transform: translate(-100%, 0px);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes slideInLeft /* Opera */
+{
+    from {
+        -o-transform: translate(-100%, 0px);
+        opacity: 0;
+    }
+    to {
+        -o-transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        -ms-transform: translate(-100%, 0px);
+        transform: translate(-100%, 0px);
+        opacity: 0;
+    }
+    to {
+        -ms-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.ani-slideInLeft {
+    -ms-animation-name: slideInLeft; /* IE */
+    -moz-animation-name: slideInLeft; /* Firefox */
+    -webkit-animation-name: slideInLeft; /* Safari and Chrome */
+    -o-animation-name: slideInLeft; /* Opera */
+    animation-name: slideInLeft;
+}
+
+/*---从右淡入---*/
+@-moz-keyframes slideInRight /* Firefox */
+{
+    from{
+        -moz-transform:translate(100%,0px);
+        opacity:0;
+    }
+    to{-moz-transform:translate(0px,0px);
+        opacity:1;
+    }
+}
+@-webkit-keyframes slideInRight /* Safari and Chrome */
+{
+    from {
+        -webkit-transform: translate(100%, 0px);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes slideInRight /* Opera */
+{
+    from {
+        -o-transform: translate(100%, 0px);
+        opacity: 0;
+    }
+    to {
+        -o-transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        -ms-transform: translate(100%, 0px);
+        transform: translate(100%, 0px);
+        opacity: 0;
+    }
+    to {
+        -ms-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.ani-slideInRight {
+    -ms-animation-name: slideInRight; /* IE */
+    -moz-animation-name: slideInRight; /* Firefox */
+    -webkit-animation-name: slideInRight; /* Safari and Chrome */
+    -o-animation-name: slideInRight; /* Opera */
+    animation-name: slideInRight;
+}
+
+/*---从上淡入---*/
+@-moz-keyframes slideInTop /* Firefox */
+{
+    from{
+        -moz-transform:translate(0,-100%);
+        opacity:0;
+    }
+    to{-moz-transform:translate(0px,0px);
+        opacity:1;
+    }
+}
+@-webkit-keyframes slideInTop /* Safari and Chrome */
+{
+    from {
+        -webkit-transform: translate(0,-100%);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes slideInTop /* Opera */
+{
+    from {
+        -o-transform: translate(0,-100%);
+        opacity: 0;
+    }
+    to {
+        -o-transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        -ms-transform: translate(0,-100%);
+        transform: translate(0,-100%);
+        opacity: 0;
+    }
+    to {
+        -ms-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.ani-slideInTop {
+    -ms-animation-name: slideInTop; /* IE */
+    -moz-animation-name: slideInTop; /* Firefox */
+    -webkit-animation-name: slideInTop; /* Safari and Chrome */
+    -o-animation-name: slideInTop; /* Opera */
+    animation-name: slideInTop;
+}
+
+/*---从下淡入---*/
+@-moz-keyframes slideInBottom /* Firefox */
+{
+    from{
+        -moz-transform:translate(0,100%);
+        opacity:0;
+    }
+    to{-moz-transform:translate(0px,0px);
+        opacity:1;
+    }
+}
+@-webkit-keyframes slideInBottom /* Safari and Chrome */
+{
+    from {
+        -webkit-transform: translate(0,100%);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes slideInBottom /* Opera */
+{
+    from {
+        -o-transform: translate(0,100%);
+        opacity: 0;
+    }
+    to {
+        -o-transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        -ms-transform: translate(0,100%);
+        transform: translate(0,100%);
+        opacity: 0;
+    }
+    to {
+        -ms-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.ani-slideInBottom {
+    -ms-animation-name: slideInBottom; /* IE */
+    -moz-animation-name: slideInBottom; /* Firefox */
+    -webkit-animation-name: slideInBottom; /* Safari and Chrome */
+    -o-animation-name: slideInBottom; /* Opera */
+    animation-name: slideInBottom;
+}
+
+/*------------------------------------------淡入------------------------------------------------*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.ani-fadeIn {
+    -ms-animation-name: fadeIn; /* IE */
+    -moz-animation-name: fadeIn; /* Firefox */
+    -webkit-animation-name: fadeIn; /* Safari and Chrome */
+    -o-animation-name: fadeIn; /* Opera */
+    animation-name: fadeIn;
+}
+/*---放大淡入---*/
+@-moz-keyframes pulsefadeIn /* Firefox */
+{
+    from{
+        -moz-transform:scale(0,0);
+        opacity:0;
+    }
+    to{-moz-transform:scale(1,1);
+        opacity:1;
+    }
+}
+@-webkit-keyframes pulsefadeIn /* Safari and Chrome */
+{
+    from {
+        -webkit-transform: scale(0,0);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform:scale(1,1);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes pulsefadeIn /* Opera */
+{
+    from {
+        -o-transform: scale(0,0);
+        opacity: 0;
+    }
+    to {
+        -o-transform: scale(1,1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulsefadeIn {
+    from {
+        -ms-transform: scale(0,0);
+        transform: scale(0,0);
+        opacity: 0;
+    }
+    to {
+        -ms-transform: scale(1,1);
+        transform: scale(1,1);
+        opacity: 1;
+    }
+}
+
+.ani-pulsefadeIn {
+    -ms-animation-name: pulsefadeIn; /* IE */
+    -moz-animation-name: pulsefadeIn; /* Firefox */
+    -webkit-animation-name: pulsefadeIn; /* Safari and Chrome */
+    -o-animation-name: pulsefadeIn; /* Opera */
+    animation-name: pulsefadeIn;
+}
+/*---------------------------展开-----------------------------*/
+@keyframes spread {
+    0% {
+        height:0%;
+    }
+    100% {
+        height:100%;
+    }
+}
+.ani-spread{
+	-ms-animation-name: spread; /* IE */
+    -moz-animation-name: spread; /* Firefox */
+    -webkit-animation-name: spread; /* Safari and Chrome */
+    -o-animation-name: spread; /* Opera */
+    animation-name: spread;
+}
+
+
+

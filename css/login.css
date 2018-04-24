@@ -1,0 +1,57 @@
+/*--------------------------------------
+	登录页
+--------------------------------------*/
+body{background:transparent;overflow:auto;font-family:"Microsoft Yahei"}
+.login-bg{position:absolute;top:0px;left:0;bottom:0;right:0;z-index:1;background:transparent url("../images/login_bg.jpg"); -webkit-background-size:100% 100%; background-size:100% 100%;}
+.wrapper{position:absolute;top:0px;left:0;bottom:0;right:0;/* background:transparent url("../images/filter.png"); */z-index:3;}
+
+
+
+
+/*登录页-logo*/
+.login-logo{padding: 70px 0px 32px 0px;}
+.logo-img{width:auto;}
+.login-logo-text{color: #ffffff;text-align: center;font-size: 36px;letter-spacing: 24px;line-height:1.8;}
+/*登录页-底部*/
+.login-bottom{position:absolute;bottom:0px;width:100%; height: auto;padding:50px 0px 60px 0px;
+	background:transparent url("../images/bg_ffffff_25.png") repeat;
+	color:#ffffff;text-align:center;}
+.login-bottom a{color:inherit;font-weight:bold;}
+
+/*登录页-主*/
+.login-wrapper{width:750px;height:380px;position:absolute;left:50%; top:50%;margin-left:-370px;margin-top:-240px;}
+.login{margin:30px auto;}
+
+.form-horizontal .control-group {margin-bottom: 10px;color:#ffffff;}
+.control-group a{font-size:14px;}
+.login input[type="text"], input[type="password"]{
+	width:272px;border-radius: 8px;background-color:#ffffff;background-color:rgba(225,225,225,0.6);padding:12px 8px;
+	color:#1c84f9;font-size: 16px;font-weight: bold;
+}
+.login input[type="text"]:focus, input[type="password"]:focus{border-color:#1c84f9;}
+.btn-login{padding:12px;color:#fff;font-size:16px;line-height:1;width:150px;
+	background:#1c84f9;border-radius: 8px;
+	box-shadow:none;border:1px solid #006deb;}
+.btn-login:hover
+,.btn-login:focus
+,.btn-login.disabled
+,.btn-login[disabled]
+{background:#006be5;color:#fff;}
+.btn-login:active,.btn-login.active{background:#0062d1;color:#fff;}
+
+.form-exclamation{border:1px solid #ffcf66;background-color:#fffff2;padding:0 12px;}
+.form-exclamation [class^="fa-"]{color:#ffcf66;}
+.form-exclamation .form-exclamation-info{font-size:12px;}
+/*------------------------------------------------------响应式----------------------------------------------------------*/
+
+@media screen and (max-width:1280px){
+
+
+
+
+}
+/*---------------------------------lg---------------------------------------*/
+@media screen and (min-width:1281px) and (max-width:1440px){
+
+
+}

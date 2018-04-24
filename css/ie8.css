@@ -1,0 +1,77 @@
+.nav{margin:0px;}
+.navbar-nav>li{float: left;}
+
+/*home*/
+.personal,.publisher,.info{box-shadow:none;background-color:#fff;/*behavior: url(ie8css3/ie-css3.htc);*/ border:1px solid #ddd;}
+.publisher-container{width:70%;}
+.publisher > .btn-group{display:block;}
+.publisher>.btn-group > .btn{float:none;}
+
+.btn{}
+
+/*----------分页----------*/
+.pagination-info{line-height: 28px;}
+.pagination-info input{margin: -2px 4px 0px 4px;}
+
+/*--------------Bootstrap css---------------*/
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {border-color:#52a8ec;}
+
+
+
+/*----------------------------
+  模态框  Bootstrap 2.3.2
+------------------------------*/
+.fade{display:none;}
+.modal-backdrop, .modal-backdrop.fade.in {display:block;}
+
+/*----------------------------
+  模拟下拉框  Bootstrap 2.3.2
+------------------------------*/
+/* .fjzx-prog-component-select-wrapper{behavior: url(ie8css3/ie-css3.htc); border:1px solid #ddd;} */
+.fjzx-prog-dropdown .fjzx-prog-dropdown-select{/*behavior: url(ie8css3/ie-css3.htc);*/}
+.fjzx-prog-component-select-wrapper.fjzx-prog-component-select-wrapper-focus{border-color:#52a8ec;}
+
+
+/*----------------------------
+  TreeSelect  Bootstrap 2.3.2
+------------------------------*/
+/* .fjzx-prog-component-tree-select-wrapper{behavior: url(ie8css3/ie-css3.htc); border:1px solid #ddd;} */
+.fjzx-prog-component-tree-select-wrapper.fjzx-prog-component-tree-select-wrapper-focus{border-color:#52a8ec;}
+
+/*----------------------------登录页---------------------------------*/
+.login-technology-wrapper{height:34%;position:relative;top:230px;}
+.login-technology-wrapper img{height:100%;width:100%;}
+.login-technology-ring1-container .login-technology-wrapper{top:174px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
