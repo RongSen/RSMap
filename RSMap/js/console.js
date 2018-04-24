@@ -234,10 +234,10 @@ function getMapDate() {
 				loadEventList(data.list);
 			},
 			function(){
-				
+
 			}
 	);
-	
+
 	JointServiceBaseRemote.getProblemProcessingCaseCommonlyList(
 			1,
 			function(data){
@@ -245,7 +245,6 @@ function getMapDate() {
 				loadReportList(data.list);
 			},
 			function(){
-				
 			}
 	);
 	JointServiceBaseRemote.getProblemProcessingCaseList(
@@ -255,7 +254,6 @@ function getMapDate() {
 				loadCaseList(data.list);
 			},
 			function(){
-				
 			}
 	);*/
 }
